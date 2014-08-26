@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/EditText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/number1_hint_string"
+        android:inputType="numberDecimal"
+        android:padding="15dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/number2_hint_string"
+        android:inputType="numberDecimal"
+        android:padding="15dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/result_label"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="60dp"
+        android:minHeight="55dip"
+        android:padding="15dp"
+        android:text="@string/add_button_string"
+        android:onClick="onAddButtonClicked" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="60dp"
+        android:minHeight="55dip"
+        android:padding="15dp"
+        android:text="@string/subtract_button_string"
+        android:onClick="onSubtractButtonClicked" />
+
+    <Button
+        android:id="@+id/Button01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="60dp"
+        android:minHeight="55dip"
+        android:padding="15dp"
+        android:text="@string/multiply_button_string" 
+        android:onClick="onMultiplyButtonClicked"/>
+
+    <Button
+        android:id="@+id/Button02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="60dp"
+        android:minHeight="55dip"
+        android:padding="15dp"
+        android:text="@string/divide_button_string" 
+        android:onClick="onDivideButtonClicked"/>
+
+    <Button
+        android:id="@+id/Button03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="60dp"
+        android:minHeight="55dip"
+        android:padding="15dp"
+        android:text="@string/clearall_button_string"
+        android:onClick="onClearAllClicked" />
+
+</LinearLayout>
